@@ -1,0 +1,22 @@
+{
+  "name": "hackergaucho",
+  "authors": [
+    "Anderson Ismael <aicoutos@users.noreply.github.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "summernote": "^0.8.4",
+    "jquery-loading": "^1.2.0"
+  }
+}

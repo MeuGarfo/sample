@@ -1,0 +1,30 @@
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+# END WordPress
+
+# segurança
+Options -Indexes
+ErrorDocument 403 /index.php
+RewriteRule ^bin/(.*)?$ - [F]
+RewriteRule ^bower_components/(.*)?$ - [F]
+RewriteRule ^bower.json - [F]
+RewriteRule ^controller/(.*)?$ - [F]
+RewriteRule ^composer.json - [F]
+RewriteRule ^composer.lock - [F]
+RewriteRule ^config/(.*)?$ - [F]
+RewriteRule ^git - [F]
+RewriteRule ^install - [F]
+RewriteRule ^make - [F]
+RewriteRule ^migrate/(.*)?$ - [F]
+RewriteRule ^README.md - [F]
+RewriteRule ^temp/(.*)?$ - [F]
+RewriteRule ^todo - [F]
+RewriteRule ^vendor/(.*)?$ - [F]
+RewriteRule ^view/(.*)?$ - [F]

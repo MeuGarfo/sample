@@ -1,0 +1,11 @@
+asset/
+bin/
+bower_components/
+config/
+inc/
+offline
+temp/
+test.php
+vendor/
+!view/inc/
+!js/inc/

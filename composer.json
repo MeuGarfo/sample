@@ -1,0 +1,7 @@
+{
+    "require": {
+        "catfan/medoo": "^1.4",
+        "klein/klein": "^2.1",
+        "box/spout": "^2.7"
+    }
+}

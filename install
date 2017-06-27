@@ -1,0 +1,18 @@
+#!/bin/bash
+clear
+touch offline
+
+# variaveis
+php=`which php`
+
+# downloads
+mkdir bin
+wget -nc https://bowerphp.github.io/bowerphp.phar -O bin/bower
+wget -nc https://getcomposer.org/composer.phar -O bin/composer
+
+# instalações (bower = 60 requisições por hora)
+$php bin/bower install
+$php bin/composer self-update
+$php bin/composer install
+
+rm offline
